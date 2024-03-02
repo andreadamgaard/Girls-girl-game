@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="girls.css">
+    <title>Spil</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="svg/GirlsGirl_logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="spil.html">Spil</a></li>
+                <li><a href="grafik.html">Grafik</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero body">
+        <div id="screen">
+            <div id="game">
+                <div id="game_background"></div>
+                <div id="game_middleground" class="pulse"></div>
+
+                <div id="game_elements">
+                    <div id="girlsgirl_container1">
+                        <div id="girlsgirl_sprite1"></div>
+                    </div>
+                    <div id="girlsgirl_container2">
+                        <div id="girlsgirl_sprite2"></div>
+                    </div>
+                    <div id="girlsgirl_container3">
+                        <div id="girlsgirl_sprite3"></div>
+                    </div>
+                    <div id="pickme_container1">
+                        <div id="pickme_sprite1"></div>
+                    </div>
+                    <div id="pickme_container2">
+                        <div id="pickme_sprite2"></div>
+                    </div>
+
+                </div>
+                <div id="game_foreground">
+                    <div id="main_character"></div>
+                </div>
+            </div>
+            <div id="game_ui">
+                <div id="score_board">
+                    <div id="point">0</div>
+                </div>
+                <div id="life_board">
+                    <div id="liv">3</div>
+                </div>
+                <div id="time_board">
+                    <div id="time_sprite"></div>
+                    <div id="time_sprite_ol"></div>
+                </div>
+            </div>
+            <div id="start" class="">
+                <div id="start_txt_1">Velkommen til Girls Girl spillet!</div>
+                <div id="start_txt">Du skal samle et empowerment squad til din bytur, fyldt med Girls Girl, illustrer
+                    med glorier. Du
+                    skal rede 12 Girls Girls for at vinde
+                    spillet. Men pas på! Der er Pick Me Girls, illustreret med horn, blandt kvinderne som kommer
+                    med bad vibes. Fanger du 3 af
+                    dem opløses dit squad på grund af dårlige vibes.</div>
+                <div id="start_knap"></div>
+            </div>
+            <div id="game_over" class="">
+                <div id="game_over_txt_1">OH NO! Game Over.</div>
+                <div id="game_over_txt">Dit squad er blevet infilteret af for mange Pick Me Girls!</div>
+                <div id="game_over_points"></div>
+                <div id="genstart1"></div>
+            </div>
+            <div id="level_complete" class="">
+                <div id="level_complete_txt_1">TILLYKKE!</div>
+                <div id="level_complete_txt">Dit empowerment squad er fuldendt og I er klar til byen!</div>
+                <div id="level_complete_points"></div>
+                <div id="genstart2"></div>
+            </div>
+        </div>
+        <div id="sounds">
+            <!-- TODO: Tilføj audio elementer her -->
+            <audio src="sounds/pick_me.mp3" id="pick_me"></audio>
+            <audio src="sounds/wuhuu_gg.mp3" id="wuhuu"></audio>
+            <audio src="sounds/yas_girl_gg.mp3" id="yas_girl"></audio>
+            <audio src="sounds/you_did_amazing_winner.mp3" id="amazing"></audio>
+            <audio src="sounds/im_not_like_most_gameover.mp3" id="not_like_most"></audio>
+        </div>
+    </section>
+    <script src="spil.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

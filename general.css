@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "cherly_blossomregular";
+  src: url("cherly_blossom-webfont.woff2") format("woff2"), url("cherly_blossom-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(to left, #46006c, #6b188e, #831bc9);
+  background-position: top left;
+  background-size: cover;
+  padding-right: 2rem;
+}
+
+.hero {
+  padding: 4%;
+}
+
+/***************************Pics***************************/
+.logo_index {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 3%;
+}
+.index_hero_pic {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+/***************************Fonte***************************/
+h1 {
+  font-family: "cherly_blossomregular", sans-serif;
+  font-size: 6rem;
+  color: #f50096;
+  padding: 0px 10px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "cherly_blossomregular", sans-serif;
+  font-size: 1.5rem;
+  color: #fdbad7;
+  padding: 0px 10px;
+  margin: 0;
+}
+h3 {
+  font-family: "cherly_blossomregular", sans-serif;
+  font-size: 2rem;
+  color: #fdbad7;
+  padding: 1% 0% 1%;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Slabo 27px", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fdbad7;
+  margin-bottom: 2%;
+}
+
+h5 {
+  font-family: "Slabo 27px", serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fdbad7;
+  margin-bottom: 2%;
+}
+p {
+  font-family: "Slabo 27px", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fdbad7;
+  margin-bottom: 5%;
+}
+
+.hero_a {
+  font-family: "Slabo 27px", serif;
+  display: inline-block;
+  color: white;
+  background: #f50096;
+  border: 1% solid transparent;
+  padding: 2% 5%;
+  line-height: 1.4;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+.hero_a:hover {
+  background: transparent;
+  border: 1px solid white;
+  transform: translate(8px);
+}
+.a_grafik {
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.a_grafik i {
+  vertical-align: middle;
+  margin-right: 2%;
+}
+
+/**********************MENU****************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+.logo:hover {
+  color: #ff9abe;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  font-family: "cherly_blossomregular", sans-serif;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #ff9abe;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #fb3fb3;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ff9abe;
+  margin-bottom: 5px;
+}
+.burger {
+  display: none;
+}
+
+/****************TEKNIK**********************/
+
+.ad_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 2% 0;
+}
+
+.gf_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #8c136693;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/*************MEDIA DESKTOP****************/
+@media (min-width: 750px) {
+  /*************INDEX LOOK****************/
+  #grid-1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15%;
+  }
+  .order {
+    order: -1;
+  }
+  .index_hero_pic {
+    width: 90%;
+    height: auto;
+  }
+  .logo_index {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 3%;
+  }
+  #game {
+    padding: 0%;
+  }
+
+  /*************teknik LOOK****************/
+
+  #grid-1-1_tek {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 5%;
+  }
+
+  .ad_img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    padding: 2% 0;
+  }
+  /*************ASSETS LOOK****************/
+  .ss_img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+  /*************GRAFIK LOOK****************/
+  .p_tekst {
+    font-family: "Slabo 27px", serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fdbad7;
+    margin-bottom: 1%;
+    width: 77%;
+  }
+  .h3_tekst {
+    font-family: "cherly_blossomregular", sans-serif;
+    font-size: 2rem;
+    color: #fdbad7;
+    padding: 0% 0% 0%;
+    margin: 0;
+  }
+  .gf_img {
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+    padding: 0% 0% 0%;
+  }
+}
+#sounds {
+  padding: 58% 0% 0%;
+}
